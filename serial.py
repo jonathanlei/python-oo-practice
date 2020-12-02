@@ -31,3 +31,6 @@ class SerialGenerator:
     def reset(self):
         """ reset current count"""
         self.current_count = self.start - 1
+
+    def __repr__(self):
+        return f"<SerialGenerator start={self.start} next={self.current_count + 1}>"
